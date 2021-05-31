@@ -1,3 +1,6 @@
+import { Router } from '@angular/router';
+import { Iskill } from './../utils/iskill';
+import { SkillsService } from './../services/skills.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  skills: Iskill[] =[];
+  constructor(
+    private skillsService: SkillsService,
+    private router: Router
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.skills = this.skillsService.getSkills();
+  }
+
+  onBackClick() {
+    this.router.navigateByUrl('/');
   }
 
 }

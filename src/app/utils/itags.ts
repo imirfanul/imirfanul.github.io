@@ -1,2 +1,4 @@
-export class ITags {
+export interface ITag {
+  displayName: string;
+  isSelected: boolean;
 }
