@@ -9,7 +9,7 @@ export class CrossIconComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

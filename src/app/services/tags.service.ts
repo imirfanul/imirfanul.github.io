@@ -20,9 +20,9 @@ export class TagsService {
       e => e.displayName === tagName
     );
 
-    if (totalSelection <= 1 && selectedSkill?.displayName) return;
-    //selectedSkill.isSelected = !selectedSkill?.isSelected;
-    //selectedSkill.isSelected = !selectedSkill?.isSelected;
+    if (totalSelection <= 1 && selectedSkill!.displayName) return;
+    selectedSkill!.isSelected = !selectedSkill!.isSelected;
+    selectedSkill!.isSelected = !selectedSkill!.isSelected;
     this.onTagUpdate.emit({
       tags: this.tags.filter(e => e.isSelected)
     });

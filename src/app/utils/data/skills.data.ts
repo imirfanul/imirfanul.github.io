@@ -4,43 +4,32 @@ export const SKILLS_DATA: Iskill[] = [
   {
     type: 'Programming Language',
     names: [
-      'C', 'C#', 'JavaScript', 'TypeScript', 'Python'
+      'C', 'C++','C#', 'JavaScript', 'TypeScript', 'Python'
     ]
   },
   {
     type: 'Backend',
     names: [
-      'Node.js & Express.js', 'ASP.NET Core/MVC/WebAPI'
+      'ASP.NET Core/MVC/WebAPI'
     ]
   },
   {
     type: 'Frontend',
     names: [
-      'Angular', 'React.js', 'CSS', 'HTML', 'jQuery'
+      'Angular', 'CSS', 'HTML', 'jQuery'
     ]
   },
   {
     type: 'Database & ORM',
     names: [
-      'SQL Server', 'MongoDB', 'Entity Framework', 'Mongoose'
+      'SQL Server', 'My SQL', 'Entity Framework'
     ]
   },
-  {
-    type: 'Cloud',
-    names: [
-      'Azure Web Service & Storage', 'Firebase DB & Functions', 'Heroku'
-    ]
-  },
-  {
-    type: 'Testing',
-    names: [
-      'Jest', 'Mocha'
-    ]
-  },
+
   {
     type: 'Others',
     names: [
-      'Git & GitHub', 'CI/CD', 'REST API', 'JWT', 'Auth0'
+      'Git & GitHub',"Unity3D"
     ]
   },
 ];
